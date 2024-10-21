@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import Hero from "@/common/components/Hero";
+
 import PostList from "./PostList";
 
 const Post = () => {
@@ -12,7 +13,7 @@ const Post = () => {
     <>
       <Hero onSearch={(value) => setSearchValue(value)} />
 
-      <PostList searchValue="" />
+      <PostList searchValue={searchValue} />
     </>
   );
 };

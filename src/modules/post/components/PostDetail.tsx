@@ -2,7 +2,6 @@
 
 import PageHeader from "@/common/components/PageHeader";
 import PageWrapper from "@/common/components/PageWrapper";
-import { PostProps } from "@/common/types";
 
 const PostDetail = ({ id }: { id: string }) => {
   return (

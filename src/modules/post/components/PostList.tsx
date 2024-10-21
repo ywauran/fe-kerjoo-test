@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { AppDispatch, RootState } from "@/store";
 import { fetchPosts } from "@/store/features/post/postSlice";
+
 import PostCard from "./PostCard";
 
 const PostList = ({ searchValue }: { searchValue: string }) => {
