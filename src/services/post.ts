@@ -35,3 +35,9 @@ export const getPostList = () => createRequest<void>("posts", "get");
 
 export const getPostDetail = (id: string) =>
   createRequest<void>(`posts/${id}`, "get");
+
+export const addPost = (
+  title: string,
+  body: string
+): Promise<AxiosResponse<any>> =>
+  createRequest<any>("posts", "post", { title, body, userId: 1 });
